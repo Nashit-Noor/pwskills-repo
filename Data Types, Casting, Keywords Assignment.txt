@@ -1,0 +1,41 @@
+1. What are Primitive data types in Java?
+Answer: byte, short, int, long, float, double, char, String and boolean.
+
+2. What are the Identifiers in Java?
+Answer: Identifiers in Java are symbolic names used for identification. They can be a class name, variable name, method name, package name, constant name.
+However there are some reserved keywords which cannot be userd as an Identifiers.
+
+3. What is final class in Java?
+Answer: A class declared with a final keyword is called final class. A class marked as final cannot be inherited.
+
+4. What are the two ways to make a class final?
+Answer: First way to make a final class is to declare a class with final keyword. Another way is to declare all of
+its constructors as private. If a class has only private constructors, it cannot be subclassed.
+
+5. Can we create an instance of final class in another class?
+Ans: Yes, we can create an instance of final class in another class but that class cannot be inherited.
+
+6. What is Volatile keyword used for ?
+Answer: Volatile is a declaration that a variable can be accessed by multiple threads and hence shouldn't be cached.
+
+7. What is the use of Transient Keyword ?
+Answer: In Java it is used to indicate that a field should not be serialized.
+
+8. What are the types of casting?
+Answer: There are two types of casting:
+	1. Primitive Casting: When the data is casted from one primitive type ( like int, float, double etc...  to another primitive type,
+	then it is called primitive casting.
+	2. Derived Casting: When the data is casted from one derived type to another derived type, then it is called derived casting.
+
+9. What is boxing and unboxing?
+Answer: Wrapping of primitive content into corresponding Wrapper class object is called boxing. Unwrapping the
+wrapper class object into corresponding primitive content is called unboxing.
+
+10. What is the difference between keywords, identifiers and literals in java ?
+Answer: Keywords are the reserved words that have a predefined meaning for the compiler and hence are restricted to be used as identifiers.
+	Identifiers are the name assigned to different programming constructs like classes, interfaces, methods ,variables etc.
+	Literals are the values that are assigned to Identifiers.
+
+For example ::
+int var = 0;
+In the above statement "int" is a keyword, "var" is an identifier and "0" is a literal.
