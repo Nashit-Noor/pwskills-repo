@@ -1,0 +1,102 @@
+1. List the operators in Java :
+Answer: Operators in Java are :
+	1. Assignment operators.
+	2. Arithmetic operators.
+	3. Logical operators.
+	4. Relational operators.
+	5. Bitwise opertors.
+	6. Unary operators.
+
+2. Explain about increment and decrement operators and give example :
+Answer: Increment Operator '++' in Java is used to increment the value by 1. For ex, i++ or ++i which means i=i+1.
+Decrement Operator '--' in Java is used to decrement the value by 1. For ex, i-- or --i which means i=i-1.
+
+3. What are conditional operators in Java?
+Answer: Conditional operators are used to evaluate boolean expressions and assign value based on outcome of result.
+There are 3 types of conditional operators logical AND, logical OR and ternary operator.
+
+LOGICAL AND OPERATOR (&&)
+It is used when both expressions are true.
+
+Syntax
+if(condition1 && condition2) {
+	statement;
+}
+
+LOGICAL OR OPERATOR (||)
+It is used when either of expression is true.
+
+Syntax
+if(condition1 || condition2) {
+	statement;
+}
+
+TERNARY OPERATOR (?:)
+It is used like a if else statement. If condition is true then statement1 is executed else statement2 is executed.
+
+Syntax
+condition ? statement1 : statement2
+
+4. What are the types of operators based on the number of operands?
+Answer: There are 3 types : Unary, Binary and Ternary operator.
+
+5. What are the conditional statements and use of conditional statements in Java?
+Answer: 1. IF to specify a block of code to be executed, if a specific condition is true.
+	2. ELSE to specify a block of code to be executed, if the same condition is false.
+	3. ELSE IF to specify a new condition to test if the first condition is false.
+	4. SWITCH to specify many alternative blocks of code to be executed.
+
+6. What is the syntax of if else statement?
+Answer: 
+
+if(condition1){
+	//block of code to be executed if above condition1 is true
+}
+else if(condition2){
+	//block of code to be executed if the condition1 is false and condition2 is true
+}
+else{
+	//block of code to be executed if the condition1 false and condition2 is also false
+}
+
+7. What are the 3 types of iterative statments in Java?
+Answer: 3 types are, 
+	1. For loop
+	2. While loop
+	3. do-while loop
+
+8. What do you mean by an Array?
+Answer: Array is a collection of homogeneous type of data stored in a indexed manner. It improves readability and saves space.
+
+9. How to create an Array?
+Answer: Array can be declared in following ways ::
+	1. int[] a;
+	2. int a[];
+	3. int []a;
+
+Array construction::
+Array is an object hence we can create it using new operator.
+Ex ::	int[] a;
+	a = new int[5];
+or 	int[] a = new int[5];
+
+10. State the difference between StringBuffer and StringBuilder in Java.
+Answer: StringBuffer and StringBuilder are two Java classes for storing and manipulating strings. These are mutable objects, 
+which means they can be modified and comes up with inbuild methods like insert(), delete(), substring() and many more/
+
+StringBuffer: The StringBuffer class was created by the Java Team when they realized the need for an editable
+string object. Nevertheless, StringBuffer has all methods synchronized, meaning they are thread-safe.
+Therefore, StringBuffer allows only one thread to access a method at once, so it is not possible to call
+StringBuffer methods from two threads simultaneously, which means it takes more time to access. The
+StringBuffer class has synchronized methods, making it thread-safe, slower, and less efficient than
+StringBuilder. The StringBuffer class was introduced in Java 1.0.
+Syntax:
+StringBuffer var = new StringBuffer(str);
+
+StringBuilder: It was at that point that the Java Team realized that making all methods of StringBuffer
+synchronized wasn't the best idea, which led them to introduce StringBuilder. The StringBuilder class has no
+synchronized methods. Unlike StringBuffer, StringBuilder does not offer synchronized methods, which makes it
+less thread-safe, faster, and more efficient. StringBuilder was introduced in Java 1.5 in response to StringBuffer's
+shortcomings.
+Syntax:
+StringBuilder var = new StringBuilder(str)
