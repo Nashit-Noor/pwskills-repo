@@ -1,0 +1,82 @@
+1. What is Inheritance in Java?
+Ans : The technique of creating a new class by using an existing class functionality is called inheritance in Java.
+In other words, inheritance is a process where a child class acquires all the properties and behaviours of the
+parent class.
+
+2. What is superclass and subclass?
+Ans : A class from where a subclass inherits features is called superclass. It is also called base class or parent
+class.
+A class that inherits all the members (fields, method, and nested classes) from another class is called a
+subclass. It is also called a derived class, child class, or extended class.
+
+3. How is Inheritance implemented/achieved in Java?
+Ans : Inheritance can be implemented or achieved by using two keywords:
+extends: extends is a keyword that is used for developing the inheritance between two classes and two
+interfaces.
+implements: implements keyword is used for developing the inheritance between a class and interface.
+
+4. What is polymorphism?
+Ans : Polymorphism in OOP is the ability of an entity to take several forms. In other words, it refers to the ability
+of an object (or a reference to an object) to take different forms of objects. It allows a common data-gathering
+message to be sent to each class. Polymorphism encourages what is called ‘extendibility’ which means an
+object or a class can have its uses extended.
+
+5. Differentiate between method overloading and method overriding.
+Ans : Method overloading deals with the notion of having two or more methods in the same class with the same name but different arguments.
+Ex : 
+void foo(int a)
+void foo(int a, float b)
+
+Method overriding means having two methods with the same arguments, but different implementations. 
+One of them would exist in the parent class, while another will be in the derived, or child class. 
+The @Override annotation, while not required, can be helpful to enforce proper overriding of a method at compile time.
+
+class Parent {
+    void foo(double d) {
+        // do something
+    }
+}
+
+class Child extends Parent {
+
+    @Override
+    void foo(double d){
+        // this method is overridden.  
+    }
+}
+
+6. What is an abstraction explained with an Example?
+Ans : Abstraction is nothing but the quality of dealing with ideas rather than events. It basically deals with
+hiding the internal details and showing the essential things to the user.
+Abstract class Sports { // abstract class sports
+Abstract void jump(); // abstract method
+}
+
+7. What is the difference between an abstract method and final method in Java?
+Ans : The abstract method is incomplete while the final method is regarded as complete. The only way to use
+an abstract method is by overriding it, but you cannot override a final method in Java.
+
+8. What do you mean by Multithreading? Why is it important?
+Ans : Multithreading means multiple threads and is considered one of the most important features of Java. As
+the name suggests, it is the ability of a CPU to execute multiple threads independently at the same time but
+share the process resources simultaneously. Its main purpose is to provide simultaneous execution of multiple
+threads to utilize the CPU time as much as possible. It is a Java feature where one can subdivide the specific
+program into two or more threads to make the execution of the program fast and easy.
+
+9. What are the benefits of using Multithreading?
+Ans : There are various benefits of multithreading as given below:
+-> Allow the program to run continuously even if a part of it is blocked.h
+-> Improve performance as compared to traditional parallel programs that use multiple processes.h
+-> Allows to write effective programs that utilize maximum CPU tim9
+-> Improves the responsiveness of complex applications or programs.h
+-> Increase use of CPU resources and reduce costs of maintenance.h
+-> Saves time and parallelism tasks.h
+-> If an exception occurs in a single thread, it will not affect other threads as threads are independent.h
+-> Less resource-intensive than executing multiple processes at the same time.
+
+10. What is Thread in Java?
+Ans : Threads are basically the lightweight and smallest unit of processing that can be managed
+independently by a scheduler. Threads are referred to as parts of a process that simply let a program execute
+efficiently with other parts or threads of the process at the same time. Using threads, one can perform
+complicated tasks in the easiest way. It is considered the simplest way to take advantage of multiple CPUs
+available in a machine. They share the common address space and are independent of each other.
