@@ -1,0 +1,77 @@
+1. What is the collection framework in Java?
+Ans : Collection in Java is a framework that provides an architecture to store and manipulate the group of
+objects.
+-> Collections can achieve all the operations that you perform on data such as searching, sorting, insertion,
+manipulation, and deletion0
+-> Collection means a single unit of objects.>
+-> The Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector,
+LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
+
+2. What is the difference between ArrayList and LinkedList?
+Ans : ArrayList : The ArrayList is similar to Arrays. They are also called dynamic arrays. That means it does not have a fixed
+size. Its size can be increased or decreased if elements are added or removed
+It implements the List Interface
+Since the ArrayList cannot be used for primitive data types like int, char, etc. , we need to use a wrapper class.
+
+LinkedList : The LinkedList class extends the AbstractSequentialList and it also extends the List, Deque and Queue
+interface. By this, we get a linked-list data structure
+Linked List is a linear data structure where the elements are called as nodes
+Here, each node has two fields- data and next. Data stores the actual piece of information and next points
+to the next node. 'Next' field is actually the address of the next node.
+Elements are not stored in a contiguous memory, so direct access to that element is not possible
+LinkedList uses Doubly Linked List to store its elements while ArrayList internally uses a dynamic array to store its elements.
+LinkedList is faster in the manipulation of data as it is node-based which makes it unique.
+
+3. What is the difference between Iterator and ListIterator?
+Ans : The main difference between Iterator and ListIterator in Java is that Iterator is a general-purpose interface for traversing
+any collection in a forward direction, while ListIterator is specific to lists and allows for both forward and backward traversal,
+as well as modification of the list during iteration. 
+
+4. What is the difference between Iterator and Enumeration?
+Ans : In Java, the key difference between an Iterator and an Enumeration is that Iterators allow modification of the collection
+during traversal (via the remove() method), while Enumerations are designed for read-only traversal of legacy collections. 
+
+5. What is the difference between List and Set?
+Ans : The primary difference between list and set is that a list allows duplicate elements and maintains their order,
+while a set ensures element uniqueness without any guaranteed order. Since lists are ordered, position indexing is allowed in them.
+However, in unordered items like sets, positional indexing is not possible.
+
+6. What is the difference between HashSet and TreeSet?
+Ans : Hash set and tree set both belong to the collection framework. HashSet is the implementation of the Set interface whereas Tree set implements sorted set.
+Tree set is backed by TreeMap while HashSet is backed by a hashmap.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Hash Set							Tree Set
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Hash set is implemented using HashTable 			The tree set is implemented using a tree structure. 
+HashSet allows a null object 					The tree set does not allow the null object. It throws the null pointer exception. 
+Hash set use equals method to compare two objects		Tree set use compare method for comparing two objects. 
+Hash set doesn't now allow a heterogeneous object 		Tree set allows a heterogeneous object 
+HashSet does not maintain any order 				TreeSet maintains an object in sorted order 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. What is the difference between Array and ArrayList?
+Ans : Arrays are fixed-size collections of elements, while ArrayLists are dynamic and resizable collections of elements.
+Arrays can only contain elements of a specific data type, while ArrayLists can hold elements of any data type.
+
+8. What is JDBC in Java?
+Ans : The JDBC API is a Java API that can access any kind of tabular data, especially data stored in a relational
+database.
+JDBC helps you to write Java applications that manage these three programming activities:
+Connect to a data source, like a database
+Send queries and update statements to the database
+Retrieve and process the results received from the database in answer to your query
+Here is the 7 step process to create a Java JDBC connection*
+1.Import the packages
+2.Register the drivers
+3.Establish a connection
+4.Create a statement
+5.Execute the query
+6.Retrieve results
+7.Close the connections
+
+9. What is DriverManager in JDBC?
+Ans : DriverManager is a static class that manages the set of Java Database Connectivity (JDBC) drivers that are available for an application to use. 
+Applications can use multiple JDBC drivers concurrently if necessary.
+
+10. Which data types are used in storing the image and file in the database table?
+Ans : To store images and files in a database table, we typically use BLOB (Binary Large Object) or VARBINARY data types.
